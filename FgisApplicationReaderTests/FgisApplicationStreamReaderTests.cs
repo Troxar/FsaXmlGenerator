@@ -1,12 +1,9 @@
 using FgisApplicationReaderLib;
 
-namespace FgisApplicationStreamReaderTests
+namespace FgisApplicationReaderTests
 {
     public class FgisApplicationStreamReaderTests
     {
-        static string fgisTemplate = File.ReadAllText(Path.Combine("Xml", "FgisTemplate.xml"));
-        static string fgisRecord = File.ReadAllText(Path.Combine("Xml", "FgisRecord.xml"));
-
         [Fact]
         public void FgisApplicationStreamReader_ExceptionOnEmptyStream()
         {
@@ -25,7 +22,7 @@ namespace FgisApplicationStreamReaderTests
             using (var writer = new StreamWriter(stream))
             using (var cut = new FgisApplicationStreamReader(stream))
             {
-                writer.Write(GetSample(0));
+                writer.Write(FgisApplicationSampleProvider.GetSample(0));
                 writer.Flush();
                 stream.Position = 0;
 
@@ -44,31 +41,13 @@ namespace FgisApplicationStreamReaderTests
             using (var writer = new StreamWriter(stream))
             using (var cut = new FgisApplicationStreamReader(stream))
             {
-                writer.Write(GetSample(count));
+                writer.Write(FgisApplicationSampleProvider.GetSample(count));
                 writer.Flush();
                 stream.Position = 0;
 
                 var records = cut.Records();
                 Assert.Equal(count, records.Count());
             }
-        }
-
-        string GetSample(int count)
-        {
-            var marker = "@body";
-            
-            int idx = fgisTemplate.IndexOf(marker);
-            if (idx == -1)
-                throw new FormatException($"Marker {marker} not found");
-
-            var sample = fgisTemplate;
-            for (int i = 0; i < count; i++)
-                sample = sample.Insert(idx, fgisRecord);
-
-            sample = sample.Replace(marker, string.Empty);
-            sample = sample.Replace("gost:", string.Empty);
-
-            return sample;
         }
     }
 }

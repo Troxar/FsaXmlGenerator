@@ -5,7 +5,7 @@ namespace FgisApplicationReaderLib
     public class FgisApplicationReader
     {
         readonly string _path;
-
+        
         public FgisApplicationReader(string path)
         {
             _path = CheckFileExists(path);
