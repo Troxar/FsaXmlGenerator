@@ -1,13 +1,13 @@
-﻿using FgisApplicationReaderLib.Models;
+﻿using FgisProtocolReaderLib.Models;
 using XmlStreamReaderLib;
 
-namespace FgisApplicationReaderLib
+namespace FgisProtocolReaderLib
 {
-    public class FgisApplicationReader
+    public class FgisProtocolReader
     {
         readonly string _path;
-        
-        public FgisApplicationReader(string path)
+
+        public FgisProtocolReader(string path)
         {
             _path = CheckFileExists(path);
         }
@@ -19,10 +19,10 @@ namespace FgisApplicationReaderLib
             return path;
         }
 
-        public IEnumerable<FgisRecord> Records()
+        public IEnumerable<ProtocolRecord> Records()
         {
             using (var stream = new FileStream(_path, FileMode.Open))
-            using (var reader = new XmlStreamReader<FgisApplication, FgisRecord>(stream))
+            using (var reader = new XmlStreamReader<Protocol, ProtocolRecord>(stream))
             {
                 return reader.Records();
             }
