@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FgisApplicationDomain\FgisApplicationDomain.csproj" />
+    <ProjectReference Include="..\FgisApplicationRecordsProvider\FgisApplicationRecordsProvider.csproj" />
+    <ProjectReference Include="..\FgisProtocolDomain\FgisProtocolDomain.csproj" />
+    <ProjectReference Include="..\FgisProtocolRecordsProvider\FgisProtocolRecordsProvider.csproj" />
+  </ItemGroup>
+
+</Project>

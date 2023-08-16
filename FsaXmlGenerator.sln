@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FgisApplicationReaderLib", "FgisApplicationReaderLib\FgisApplicationReaderLib.csproj", "{6694115F-D4E2-406D-94FA-952F6793D484}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FsaMessageGeneratorLib", "FsaMessageGeneratorLib\FsaMessageGeneratorLib.csproj", "{8789E086-2D9F-407A-8EF8-D0F25C9A414C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FgisApplicationReaderTests", "FgisApplicationReaderTests\FgisApplicationReaderTests.csproj", "{8F8B2C76-9FE7-4A0D-B192-FA017481D671}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FgisApplicationDomain", "FgisApplicationDomain\FgisApplicationDomain.csproj", "{B56F6CBF-8926-4DFF-B475-F7679099B827}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FgisProtocolReaderLib", "FgisProtocolReaderLib\FgisProtocolReaderLib.csproj", "{6439F4BC-9479-4AD6-9819-62FCE043BBA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FgisApplicationRecordsProvider", "FgisApplicationRecordsProvider\FgisApplicationRecordsProvider.csproj", "{AD1456DF-9EB4-45AD-8267-176E69B6B64A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XmlStreamReaderLib", "XmlStreamReaderLib\XmlStreamReaderLib.csproj", "{C6C78891-49FA-4019-A002-0679283F1A6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FgisProtocolDomain", "FgisProtocolDomain\FgisProtocolDomain.csproj", "{95AD9E0B-814A-478F-8682-EC101AFE5204}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FgisProtocolReaderTests", "FgisProtocolReaderTests\FgisProtocolReaderTests.csproj", "{90058777-0322-4493-A588-C2B6A2217FCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FgisProtocolRecordsProvider", "FgisProtocolRecordsProvider\FgisProtocolRecordsProvider.csproj", "{8140DA4A-E9F6-4340-B715-312AFA7CFB32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlStreamReaderTests", "XmlStreamReaderTests\XmlStreamReaderTests.csproj", "{15D941D8-DEDB-497A-9A9D-430B20781829}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FgisApplicationRecordsProviderTests", "FgisApplicationRecordsProviderTests\FgisApplicationRecordsProviderTests.csproj", "{9FD7C543-2EC7-4214-B2E1-48015CFBFD95}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FgisProtocolRecordsProviderTests", "FgisProtocolRecordsProviderTests\FgisProtocolRecordsProviderTests.csproj", "{48558412-E109-435A-920D-C32490884E88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,30 +23,34 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6694115F-D4E2-406D-94FA-952F6793D484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6694115F-D4E2-406D-94FA-952F6793D484}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6694115F-D4E2-406D-94FA-952F6793D484}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6694115F-D4E2-406D-94FA-952F6793D484}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8F8B2C76-9FE7-4A0D-B192-FA017481D671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8F8B2C76-9FE7-4A0D-B192-FA017481D671}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8F8B2C76-9FE7-4A0D-B192-FA017481D671}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8F8B2C76-9FE7-4A0D-B192-FA017481D671}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6439F4BC-9479-4AD6-9819-62FCE043BBA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6439F4BC-9479-4AD6-9819-62FCE043BBA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6439F4BC-9479-4AD6-9819-62FCE043BBA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6439F4BC-9479-4AD6-9819-62FCE043BBA6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C6C78891-49FA-4019-A002-0679283F1A6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C6C78891-49FA-4019-A002-0679283F1A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C6C78891-49FA-4019-A002-0679283F1A6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C6C78891-49FA-4019-A002-0679283F1A6B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{90058777-0322-4493-A588-C2B6A2217FCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{90058777-0322-4493-A588-C2B6A2217FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{90058777-0322-4493-A588-C2B6A2217FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{90058777-0322-4493-A588-C2B6A2217FCD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{15D941D8-DEDB-497A-9A9D-430B20781829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{15D941D8-DEDB-497A-9A9D-430B20781829}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{15D941D8-DEDB-497A-9A9D-430B20781829}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{15D941D8-DEDB-497A-9A9D-430B20781829}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8789E086-2D9F-407A-8EF8-D0F25C9A414C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8789E086-2D9F-407A-8EF8-D0F25C9A414C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8789E086-2D9F-407A-8EF8-D0F25C9A414C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8789E086-2D9F-407A-8EF8-D0F25C9A414C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B56F6CBF-8926-4DFF-B475-F7679099B827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B56F6CBF-8926-4DFF-B475-F7679099B827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B56F6CBF-8926-4DFF-B475-F7679099B827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B56F6CBF-8926-4DFF-B475-F7679099B827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD1456DF-9EB4-45AD-8267-176E69B6B64A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD1456DF-9EB4-45AD-8267-176E69B6B64A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD1456DF-9EB4-45AD-8267-176E69B6B64A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD1456DF-9EB4-45AD-8267-176E69B6B64A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95AD9E0B-814A-478F-8682-EC101AFE5204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95AD9E0B-814A-478F-8682-EC101AFE5204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95AD9E0B-814A-478F-8682-EC101AFE5204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95AD9E0B-814A-478F-8682-EC101AFE5204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8140DA4A-E9F6-4340-B715-312AFA7CFB32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8140DA4A-E9F6-4340-B715-312AFA7CFB32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8140DA4A-E9F6-4340-B715-312AFA7CFB32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8140DA4A-E9F6-4340-B715-312AFA7CFB32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FD7C543-2EC7-4214-B2E1-48015CFBFD95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FD7C543-2EC7-4214-B2E1-48015CFBFD95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FD7C543-2EC7-4214-B2E1-48015CFBFD95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FD7C543-2EC7-4214-B2E1-48015CFBFD95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48558412-E109-435A-920D-C32490884E88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48558412-E109-435A-920D-C32490884E88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48558412-E109-435A-920D-C32490884E88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48558412-E109-435A-920D-C32490884E88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

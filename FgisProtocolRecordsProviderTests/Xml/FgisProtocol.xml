@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gost:protocol xmlns:gost="urn://fgis-arshin.gost.ru/module-verifications/protocol/2020-06-19">
+	<gost:startProcessing>2023-07-27T08:01:51+03:00</gost:startProcessing>
+	<gost:finishProcessing>2023-07-27T08:02:06+03:00</gost:finishProcessing>
+	<gost:appProcessed>
+		@record
+	</gost:appProcessed>
+</gost:protocol>
