@@ -1,4 +1,5 @@
 ﻿using FgisProtocolDomain;
+using FsaMessageGeneratorLib;
 using System.Xml.Serialization;
 
 namespace FgisProtocolRecordsProvider

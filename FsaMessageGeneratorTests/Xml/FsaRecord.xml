@@ -1,0 +1,13 @@
+﻿<VerificationMeasuringInstrument>
+    <NumberVerification>264874789</NumberVerification>
+    <DateVerification>2023-07-17</DateVerification>
+    <TypeMeasuringInstrument>МП3-Уф</TypeMeasuringInstrument>
+    <ApprovedEmployee>
+        <Name>
+            <Last>Большакова</Last>
+            <First>Елена</First>
+        </Name>
+        <SNILS>03216971234</SNILS>
+    </ApprovedEmployee>
+    <ResultVerification>1</ResultVerification>
+</VerificationMeasuringInstrument>

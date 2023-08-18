@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FgisApplicationDomain\FgisApplicationDomain.csproj" />
+    <ProjectReference Include="..\FsaMessageGeneratorLib\FsaMessageGeneratorLib.csproj" />
   </ItemGroup>
 
 </Project>

@@ -8,9 +8,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FgisApplicationDomain\FgisApplicationDomain.csproj" />
-    <ProjectReference Include="..\FgisApplicationRecordsProvider\FgisApplicationRecordsProvider.csproj" />
     <ProjectReference Include="..\FgisProtocolDomain\FgisProtocolDomain.csproj" />
-    <ProjectReference Include="..\FgisProtocolRecordsProvider\FgisProtocolRecordsProvider.csproj" />
+    <ProjectReference Include="..\FsaMessageDomain\FsaMessageDomain.csproj" />
   </ItemGroup>
 
 </Project>

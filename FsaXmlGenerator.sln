@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FsaMessageGeneratorLib", "FsaMessageGeneratorLib\FsaMessageGeneratorLib.csproj", "{8789E086-2D9F-407A-8EF8-D0F25C9A414C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FgisApplicationDomain", "FgisApplicationDomain\FgisApplicationDomain.csproj", "{B56F6CBF-8926-4DFF-B475-F7679099B827}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FgisApplicationRecordsProvider", "FgisApplicationRecordsProvider\FgisApplicationRecordsProvider.csproj", "{AD1456DF-9EB4-45AD-8267-176E69B6B64A}"
@@ -17,16 +15,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FgisApplicationRecordsProvi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FgisProtocolRecordsProviderTests", "FgisProtocolRecordsProviderTests\FgisProtocolRecordsProviderTests.csproj", "{48558412-E109-435A-920D-C32490884E88}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FsaMessageDomain", "FsaMessageDomain\FsaMessageDomain.csproj", "{BDFF8F36-01A4-417C-AEF6-C37C61E3E164}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FsaMessageGeneratorLib", "FsaMessageGeneratorLib\FsaMessageGeneratorLib.csproj", "{0F589B6F-1911-4D4C-A241-CD86705F95B3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FsaMessageGeneratorTests", "FsaMessageGeneratorTests\FsaMessageGeneratorTests.csproj", "{7C2EAD67-F295-45B5-9120-AD70FD7A46AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8789E086-2D9F-407A-8EF8-D0F25C9A414C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8789E086-2D9F-407A-8EF8-D0F25C9A414C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8789E086-2D9F-407A-8EF8-D0F25C9A414C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8789E086-2D9F-407A-8EF8-D0F25C9A414C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B56F6CBF-8926-4DFF-B475-F7679099B827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B56F6CBF-8926-4DFF-B475-F7679099B827}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B56F6CBF-8926-4DFF-B475-F7679099B827}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +51,18 @@ Global
 		{48558412-E109-435A-920D-C32490884E88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48558412-E109-435A-920D-C32490884E88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48558412-E109-435A-920D-C32490884E88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDFF8F36-01A4-417C-AEF6-C37C61E3E164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDFF8F36-01A4-417C-AEF6-C37C61E3E164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDFF8F36-01A4-417C-AEF6-C37C61E3E164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDFF8F36-01A4-417C-AEF6-C37C61E3E164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F589B6F-1911-4D4C-A241-CD86705F95B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F589B6F-1911-4D4C-A241-CD86705F95B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F589B6F-1911-4D4C-A241-CD86705F95B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F589B6F-1911-4D4C-A241-CD86705F95B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C2EAD67-F295-45B5-9120-AD70FD7A46AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C2EAD67-F295-45B5-9120-AD70FD7A46AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C2EAD67-F295-45B5-9120-AD70FD7A46AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C2EAD67-F295-45B5-9120-AD70FD7A46AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
