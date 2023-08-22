@@ -1,6 +1,6 @@
 ﻿using FgisApplicationDomain;
 
-namespace FsaMessageGeneratorLib
+namespace Contracts
 {
     public interface IFgisApplicationRecordsProvider
     {

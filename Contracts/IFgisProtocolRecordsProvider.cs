@@ -1,6 +1,6 @@
 ﻿using FgisProtocolDomain;
 
-namespace FsaMessageGeneratorLib
+namespace Contracts
 {
     public interface IFgisProtocolRecordsProvider
     {

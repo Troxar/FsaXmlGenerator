@@ -1,0 +1,14 @@
+{
+  "FgisApplicationPath": "app_path",
+  "FgisProtocolPath": "protocol_path",
+  "FsaMessagePath": "message_path",
+  "employees": [
+    {
+      "name": {
+        "last": "last_name",
+        "first": "first_name"
+      },
+      "snils": "snils_number"
+    }
+  ]
+}

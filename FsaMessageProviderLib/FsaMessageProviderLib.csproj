@@ -8,7 +8,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Contracts\Contracts.csproj" />
+    <ProjectReference Include="..\FgisApplicationDomain\FgisApplicationDomain.csproj" />
     <ProjectReference Include="..\FgisProtocolDomain\FgisProtocolDomain.csproj" />
+    <ProjectReference Include="..\FsaMessageDomain\FsaMessageDomain.csproj" />
+    <InternalsVisibleTo Include="FsaMessageProviderTests" />
   </ItemGroup>
 
 </Project>

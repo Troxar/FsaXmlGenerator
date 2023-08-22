@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gost:application xmlns:gost="urn://fgis-arshin.gost.ru/module-verifications/import/2020-06-19">
+	<gost:result>
+		<gost:miInfo>
+			<gost:singleMI>
+				<gost:mitypeNumber>60168-15</gost:mitypeNumber>
+				<gost:manufactureNum>735101123A42</gost:manufactureNum>
+				<gost:manufactureYear>2023</gost:manufactureYear>
+				<gost:modification>МП3-Уф</gost:modification>
+			</gost:singleMI>
+		</gost:miInfo>
+		<gost:signCipher>ГГИ</gost:signCipher>
+		<gost:miOwner>АО "ПО Физтех"</gost:miOwner>
+		<gost:vrfDate>2023-07-17+07:00</gost:vrfDate>
+		<gost:validDate>2025-07-16+07:00</gost:validDate>
+		<gost:type>1</gost:type>
+		<gost:calibration>false</gost:calibration>
+		<gost:applicable>
+			<gost:signPass>false</gost:signPass>
+			<gost:signMi>true</gost:signMi>
+		</gost:applicable>
+		<gost:docTitle>МИ2124-90 (СТБ 8056-2015)</gost:docTitle>
+		<gost:metrologist>Мартюшев Роман Владимирович</gost:metrologist>
+		<gost:means>
+			<gost:mieta>
+				<gost:number>16026.97.2Р.00190012</gost:number>
+			</gost:mieta>
+		</gost:means>
+		<gost:conditions>
+			<gost:temperature>23°C</gost:temperature>
+			<gost:pressure>744 мм рт ст</gost:pressure>
+			<gost:hymidity>67%</gost:hymidity>
+		</gost:conditions>
+		<gost:structure>-</gost:structure>
+	</gost:result>
+</gost:application>

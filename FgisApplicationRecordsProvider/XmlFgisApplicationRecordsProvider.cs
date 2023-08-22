@@ -1,5 +1,5 @@
-﻿using FgisApplicationDomain;
-using FsaMessageGeneratorLib;
+﻿using Contracts;
+using FgisApplicationDomain;
 using System.Xml.Serialization;
 
 namespace FgisApplicationRecordsProvider

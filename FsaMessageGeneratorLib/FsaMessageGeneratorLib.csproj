@@ -7,9 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Contracts\Contracts.csproj" />
     <ProjectReference Include="..\FgisApplicationDomain\FgisApplicationDomain.csproj" />
+    <ProjectReference Include="..\FgisApplicationRecordsProvider\FgisApplicationRecordsProvider.csproj" />
     <ProjectReference Include="..\FgisProtocolDomain\FgisProtocolDomain.csproj" />
+    <ProjectReference Include="..\FgisProtocolRecordsProvider\FgisProtocolRecordsProvider.csproj" />
     <ProjectReference Include="..\FsaMessageDomain\FsaMessageDomain.csproj" />
+    <ProjectReference Include="..\FsaMessageProviderLib\FsaMessageProviderLib.csproj" />
+    <InternalsVisibleTo Include="FsaMessageGeneratorTests"/>
   </ItemGroup>
 
 </Project>

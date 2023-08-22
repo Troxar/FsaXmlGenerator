@@ -1,22 +1,23 @@
-﻿using FgisApplicationDomain;
+﻿using Contracts;
+using FgisApplicationDomain;
 using FgisProtocolDomain;
 using FsaMessageDomain;
 
-namespace FsaMessageGeneratorLib
+namespace FsaMessageProviderLib
 {
-    public class FsaMessageProvider
+    public class FsaMessageProvider : IFsaMessageProvider
     {
         readonly IFgisApplicationRecordsProvider _appRecordsProvider;
         readonly IFgisProtocolRecordsProvider _protocolRecordsProvider;
-        readonly ApprovedEmployee _approvedEmployee;
+        readonly ApprovedEmployee[] _employees;
 
         public FsaMessageProvider(IFgisApplicationRecordsProvider appRecordsProvider,
             IFgisProtocolRecordsProvider protocolRecordsProvider,
-            ApprovedEmployee approvedEmployee)
+            ApprovedEmployee[] employees)
         {
             _appRecordsProvider = appRecordsProvider;
             _protocolRecordsProvider = protocolRecordsProvider;
-            _approvedEmployee = approvedEmployee;
+            _employees = employees;
         }
 
         public FsaMessage CreateMessage()
@@ -43,9 +44,22 @@ namespace FsaMessageGeneratorLib
                     NumberVerification = protocolRecord.Success.GlobalId,
                     DateVerificationString = appRecord.VrfDateString,
                     TypeMeasuringInstrument = appRecord.MiInfo.SingleMi.Modification,
-                    ApprovedEmployee = _approvedEmployee,
+                    ApprovedEmployee = GetApprovedEmployee(appRecord.Metrologist),
                     ResultVerification = 1
                 };
+        }
+
+        internal ApprovedEmployee GetApprovedEmployee(string fullName)
+        {
+            var pieces = fullName.Split(' ');
+            if (pieces.Length < 2)
+                throw new FormatException(fullName);
+
+            var employee =_employees.FirstOrDefault(e => e.Name.Last == pieces[0] && e.Name.First == pieces[1]);
+            if (employee is null)
+                throw new EmployeeNotFoundException($"{pieces[0]} {pieces[1]}");
+
+            return employee;
         }
     }
 }

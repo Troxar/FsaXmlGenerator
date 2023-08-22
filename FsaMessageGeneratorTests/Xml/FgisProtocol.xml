@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gost:protocol xmlns:gost="urn://fgis-arshin.gost.ru/module-verifications/protocol/2020-06-19">
+	<gost:startProcessing>2023-07-27T08:01:51+03:00</gost:startProcessing>
+	<gost:finishProcessing>2023-07-27T08:02:06+03:00</gost:finishProcessing>
+	<gost:appProcessed>
+		<gost:record gost:corrID="280036364">
+			<gost:success>
+				<gost:globalID>264874789</gost:globalID>
+				<gost:certNum>С-ГГИ/17-07-2023/264874789</gost:certNum>
+			</gost:success>
+		</gost:record>
+	</gost:appProcessed>
+</gost:protocol>

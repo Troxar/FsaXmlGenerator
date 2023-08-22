@@ -1,7 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Message xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <VerificationMeasuringInstrumentData>
-        @record
+		<VerificationMeasuringInstrument>
+			<NumberVerification>264874789</NumberVerification>
+			<DateVerification>2023-07-17</DateVerification>
+			<TypeMeasuringInstrument>МП3-Уф</TypeMeasuringInstrument>
+			<ApprovedEmployee>
+				<Name>
+					<Last>Мартюшев</Last>
+					<First>Роман</First>
+				</Name>
+				<SNILS>9999</SNILS>
+			</ApprovedEmployee>
+			<ResultVerification>1</ResultVerification>
+		</VerificationMeasuringInstrument>
     </VerificationMeasuringInstrumentData>
     <SaveMethod>1</SaveMethod>
 </Message>

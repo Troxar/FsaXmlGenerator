@@ -1,7 +1,7 @@
 ﻿using FsaMessageGeneratorLib;
 using System.Text.RegularExpressions;
 
-namespace FsaMessageGeneratorTests
+namespace FsaMessageProviderTests
 {
     public class FsaMessageXmlWriterTests
     {
@@ -14,8 +14,7 @@ namespace FsaMessageGeneratorTests
         {
             var message = SamplesProvider.GetFsaMessage(count);
             var path = Path.GetTempFileName();
-            var writer = new FsaMessageXmlWriter(message, path);
-            writer.Write();
+            FsaMessageXmlWriter.Write(message, path);
 
             var expected = RemoveSpecialCharacters(SamplesProvider.GetFsaMessageXml(count));
             var actual = RemoveSpecialCharacters(File.ReadAllText(path));

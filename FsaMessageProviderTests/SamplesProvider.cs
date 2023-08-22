@@ -2,7 +2,7 @@
 using FgisProtocolDomain;
 using FsaMessageDomain;
 
-namespace FsaMessageGeneratorTests
+namespace FsaMessageProviderTests
 {
     internal static class SamplesProvider
     {
@@ -47,7 +47,7 @@ namespace FsaMessageGeneratorTests
                 Calibration = false,
                 Applicable = applicable,
                 DocTitle = "МИ2124-90 (СТБ 8056-2015)",
-                Metrologist = "Мартюшев Роман Владимирович",
+                Metrologist = "Большакова Елена",
                 Means = means,
                 Conditions = conditions,
                 Structure = "-"
@@ -125,7 +125,7 @@ namespace FsaMessageGeneratorTests
                     Last = "Большакова",
                     First = "Елена"
                 },
-                Snils = "03216971234"
+                Snils = "5555"
             };
             return employee;
         }
