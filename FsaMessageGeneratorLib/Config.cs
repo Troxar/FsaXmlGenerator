@@ -2,7 +2,7 @@
 
 namespace FsaMessageGeneratorLib
 {
-    record class Config(
+    public record class Config(
         string FgisApplicationPath,
         string FgisProtocolPath, 
         string FsaMessagePath, 

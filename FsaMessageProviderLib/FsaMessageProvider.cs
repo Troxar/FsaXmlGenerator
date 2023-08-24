@@ -23,7 +23,7 @@ namespace FsaMessageProviderLib
         public FsaMessage CreateMessage()
         {
             if (_appRecordsProvider.Records.Count() != _protocolRecordsProvider.Records.Count())
-                throw new RecordsMismatchException("Counts of application and protocol records are not equal");
+                throw new RecordsMismatchException("Application records count is not equal to Protocol records count");
 
             var vrfRecords = _appRecordsProvider.Records
                 .Zip(_protocolRecordsProvider.Records, CreateVerificationRecord)
@@ -53,11 +53,11 @@ namespace FsaMessageProviderLib
         {
             var pieces = fullName.Split(' ');
             if (pieces.Length < 2)
-                throw new FormatException(fullName);
+                throw new FormatException("Wrong employee name format: " + fullName);
 
             var employee =_employees.FirstOrDefault(e => e.Name.Last == pieces[0] && e.Name.First == pieces[1]);
             if (employee is null)
-                throw new EmployeeNotFoundException($"{pieces[0]} {pieces[1]}");
+                throw new EmployeeNotFoundException("Approved employee not found: " + fullName);
 
             return employee;
         }
