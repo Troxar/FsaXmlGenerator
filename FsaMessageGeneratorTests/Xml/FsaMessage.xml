@@ -2,13 +2,13 @@
 <Message xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <VerificationMeasuringInstrumentData>
 		<VerificationMeasuringInstrument>
-			<NumberVerification>264874789</NumberVerification>
+			<NumberVerification>987654321</NumberVerification>
 			<DateVerification>2023-07-17</DateVerification>
-			<TypeMeasuringInstrument>МП3-Уф</TypeMeasuringInstrument>
+			<TypeMeasuringInstrument>AB1-Cd</TypeMeasuringInstrument>
 			<ApprovedEmployee>
 				<Name>
-					<Last>Мартюшев</Last>
-					<First>Роман</First>
+					<Last>LastName</Last>
+					<First>FirstName</First>
 				</Name>
 				<SNILS>9999</SNILS>
 			</ApprovedEmployee>

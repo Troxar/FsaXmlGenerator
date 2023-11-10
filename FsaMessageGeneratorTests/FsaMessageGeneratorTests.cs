@@ -15,7 +15,7 @@ namespace FsaMessageGeneratorTests
                 FsaMessagePath: Path.GetTempFileName(),
                 Employees: new[] {
                     new ApprovedEmployee {
-                        Name = new EmployeeName { Last = "Мартюшев", First = "Роман" },
+                        Name = new EmployeeName { Last = "LastName", First = "FirstName" },
                         Snils = "9999"
                     }
                 });

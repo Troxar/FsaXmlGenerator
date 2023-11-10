@@ -56,7 +56,7 @@ namespace FsaMessageProviderTests
 
         [Theory]
         [InlineData("")]
-        [InlineData("Мартюшев")]
+        [InlineData("LastName1")]
         public void GetApprovedEmployee_ThrowsFormatException(string fullName)
         {
             var appRecordsProvider = GetFgisApplicationRecordsProvider(0);
@@ -68,8 +68,8 @@ namespace FsaMessageProviderTests
         }
 
         [Theory]
-        [InlineData("Роман Мартюшев")]
-        [InlineData("Волкова Елена")]
+        [InlineData("FistName2 LastName2")]
+        [InlineData("LastName3 FirstName1")]
         public void GetApprovedEmployee_ThrowsEmployeeNotFoundException(string fullName)
         {
             var appRecordsProvider = GetFgisApplicationRecordsProvider(0);
@@ -81,9 +81,9 @@ namespace FsaMessageProviderTests
         }
 
         [Theory]
-        [InlineData("Мартюшев Роман")]
-        [InlineData("Волкова Юлия")]
-        [InlineData("Волкова Юлия Олеговна")]
+        [InlineData("LastName1 FirstName1")]
+        [InlineData("LastName3 FirstName3")]
+        [InlineData("LastName3 FirstName3 MiddleName3")]
         public void GetApprovedEmployee_ReturnsEmployee(string fullName)
         {
             var appRecordsProvider = GetFgisApplicationRecordsProvider(0);
@@ -102,15 +102,15 @@ namespace FsaMessageProviderTests
             return new[]
                 {
                 new ApprovedEmployee {
-                        Name = new EmployeeName { Last = "Большакова", First = "Елена" },
+                        Name = new EmployeeName { Last = "LastName1", First = "FirstName1" },
                         Snils = "5555"
                     },
                 new ApprovedEmployee {
-                        Name = new EmployeeName { Last = "Мартюшев", First = "Роман" },
+                        Name = new EmployeeName { Last = "LastName2", First = "FirstName2" },
                         Snils = "9999"
                     },
                 new ApprovedEmployee {
-                        Name = new EmployeeName { Last = "Волкова", First = "Юлия" },
+                        Name = new EmployeeName { Last = "LastName3", First = "FirstName3" },
                         Snils = "2222"
                     },
                 };

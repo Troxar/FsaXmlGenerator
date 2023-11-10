@@ -1,11 +1,11 @@
 ﻿<VerificationMeasuringInstrument>
-    <NumberVerification>264874789</NumberVerification>
+    <NumberVerification>123456789</NumberVerification>
     <DateVerification>2023-07-17</DateVerification>
-    <TypeMeasuringInstrument>МП3-Уф</TypeMeasuringInstrument>
+    <TypeMeasuringInstrument>AB1-Cd</TypeMeasuringInstrument>
     <ApprovedEmployee>
         <Name>
-            <Last>Большакова</Last>
-            <First>Елена</First>
+            <Last>LastName</Last>
+            <First>FirstName</First>
         </Name>
         <SNILS>5555</SNILS>
     </ApprovedEmployee>

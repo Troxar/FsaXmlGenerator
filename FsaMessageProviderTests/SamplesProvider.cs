@@ -6,9 +6,9 @@ namespace FsaMessageProviderTests
 {
     internal static class SamplesProvider
     {
-        const int GlobalId = 264874789;
+        const int GlobalId = 123456789;
         const string VrfDateString = "2023-07-17+07:00";
-        const string Modification = "МП3-Уф";
+        const string Modification = "AB1-Cd";
 
         static string fsaTemplate = File.ReadAllText(Path.Combine("Xml", "FsaMessage.xml"));
         static string fsaRecord = File.ReadAllText(Path.Combine("Xml", "FsaRecord.xml"));
@@ -17,8 +17,8 @@ namespace FsaMessageProviderTests
         {
             var singleMi = new SingleMi
             {
-                MiTypeNumber = "60168-15",
-                ManufactureNum = "735101123A42",
+                MiTypeNumber = "12345-67",
+                ManufactureNum = "987654321A09",
                 ManufactureYear = 2023,
                 Modification = Modification
             };
@@ -28,26 +28,26 @@ namespace FsaMessageProviderTests
                 SignPass = false,
                 SignMi = true
             };
-            var mieta = new Mieta { Number = "16026.97.2Р.00190012" };
+            var mieta = new Mieta { Number = "12345.67.8A.90123456" };
             var means = new Means { Mieta = mieta };
             var conditions = new Conditions
             {
                 Temperature = "23°C",
-                Pressure = "744 мм рт ст",
+                Pressure = "744 mm",
                 Humidity = "67%"
             };
             var record = new FgisRecord
             {
                 MiInfo = miInfo,
-                SignCipher = "ГГИ",
-                MiOwner = "АО \"ПО Физтех\"",
+                SignCipher = "EFG",
+                MiOwner = "BigTech, Inc.",
                 VrfDateString = VrfDateString,
                 ValidDateString = "2025-07-16+07:00",
                 Type = 1,
                 Calibration = false,
                 Applicable = applicable,
-                DocTitle = "МИ2124-90 (СТБ 8056-2015)",
-                Metrologist = "Большакова Елена",
+                DocTitle = "HI1234-56 (JKL 7890-1234)",
+                Metrologist = "LastName FirstName",
                 Means = means,
                 Conditions = conditions,
                 Structure = "-"
@@ -68,7 +68,7 @@ namespace FsaMessageProviderTests
             var success = new Success
             {
                 GlobalId = GlobalId,
-                CertNum = "С-ГГИ/17-07-2023/264874789"
+                CertNum = "A-BCD/12-34-2023/456789012"
             };
             var record = new FgisProtocolRecord
             {
@@ -122,8 +122,8 @@ namespace FsaMessageProviderTests
             {
                 Name = new EmployeeName
                 {
-                    Last = "Большакова",
-                    First = "Елена"
+                    Last = "LastName",
+                    First = "FirstName"
                 },
                 Snils = "5555"
             };

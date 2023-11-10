@@ -27,10 +27,10 @@ namespace FgisApplicationRecordsProviderTests
         {
             var singleMi = new SingleMi
             {
-                MiTypeNumber = "60168-15",
-                ManufactureNum = "735101123A42",
+                MiTypeNumber = "12345-67",
+                ManufactureNum = "987654321A09",
                 ManufactureYear = 2023,
-                Modification = "МП3-Уф"
+                Modification = "AB1-Cd"
             };
             var miInfo = new MiInfo { SingleMi = singleMi };
             var applicable = new Applicable
@@ -38,26 +38,26 @@ namespace FgisApplicationRecordsProviderTests
                 SignPass = false,
                 SignMi = true
             };
-            var mieta = new Mieta { Number = "16026.97.2Р.00190012" };
+            var mieta = new Mieta { Number = "12345.67.8A.90123456" };
             var means = new Means { Mieta = mieta };
             var conditions = new Conditions
             {
                 Temperature = "23°C",
-                Pressure = "744 мм рт ст",
+                Pressure = "744 mm",
                 Humidity = "67%"
             };
             var record = new FgisRecord
             {
                 MiInfo = miInfo,
-                SignCipher = "ГГИ",
-                MiOwner = "АО \"ПО Физтех\"",
+                SignCipher = "EFG",
+                MiOwner = "BigTech, Inc.",
                 VrfDateString = "2023-07-17+07:00",
                 ValidDateString = "2025-07-16+07:00",
                 Type = 1,
                 Calibration = false,
                 Applicable = applicable,
-                DocTitle = "МИ2124-90 (СТБ 8056-2015)",
-                Metrologist = "Мартюшев Роман Владимирович",
+                DocTitle = "HI1234-56 (JKL 7890-1234)",
+                Metrologist = "FirstName LastName",
                 Means = means,
                 Conditions = conditions,
                 Structure = "-"

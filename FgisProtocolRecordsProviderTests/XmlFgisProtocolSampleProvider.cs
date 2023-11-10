@@ -27,8 +27,8 @@ namespace FgisProtocolRecordsProviderTests
         {
             var success = new Success
             {
-                GlobalId = 264874789,
-                CertNum = "С-ГГИ/17-07-2023/264874789"
+                GlobalId = 987654321,
+                CertNum = "A-BCD/12-34-2023/123456789"
             };
             var record = new FgisProtocolRecord
             {

@@ -1,14 +1,14 @@
 ﻿<gost:result>
 	<gost:miInfo>
 		<gost:singleMI>
-			<gost:mitypeNumber>60168-15</gost:mitypeNumber>
-			<gost:manufactureNum>735101123A42</gost:manufactureNum>
+			<gost:mitypeNumber>12345-67</gost:mitypeNumber>
+			<gost:manufactureNum>987654321A09</gost:manufactureNum>
 			<gost:manufactureYear>2023</gost:manufactureYear>
-			<gost:modification>МП3-Уф</gost:modification>
+			<gost:modification>AB1-Cd</gost:modification>
 		</gost:singleMI>
 	</gost:miInfo>
-	<gost:signCipher>ГГИ</gost:signCipher>
-	<gost:miOwner>АО "ПО Физтех"</gost:miOwner>
+	<gost:signCipher>EFG</gost:signCipher>
+	<gost:miOwner>BigTech, Inc.</gost:miOwner>
 	<gost:vrfDate>2023-07-17+07:00</gost:vrfDate>
 	<gost:validDate>2025-07-16+07:00</gost:validDate>
 	<gost:type>1</gost:type>
@@ -17,16 +17,16 @@
 		<gost:signPass>false</gost:signPass>
 		<gost:signMi>true</gost:signMi>
 	</gost:applicable>
-	<gost:docTitle>МИ2124-90 (СТБ 8056-2015)</gost:docTitle>
-	<gost:metrologist>Мартюшев Роман Владимирович</gost:metrologist>
+	<gost:docTitle>HI1234-56 (JKL 7890-1234)</gost:docTitle>
+	<gost:metrologist>FirstName LastName</gost:metrologist>
 	<gost:means>
 		<gost:mieta>
-			<gost:number>16026.97.2Р.00190012</gost:number>
+			<gost:number>12345.67.8A.90123456</gost:number>
 		</gost:mieta>
 	</gost:means>
 	<gost:conditions>
 		<gost:temperature>23°C</gost:temperature>
-		<gost:pressure>744 мм рт ст</gost:pressure>
+		<gost:pressure>744 mm</gost:pressure>
 		<gost:hymidity>67%</gost:hymidity>
 	</gost:conditions>
 	<gost:structure>-</gost:structure>

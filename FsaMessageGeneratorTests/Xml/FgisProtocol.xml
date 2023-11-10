@@ -3,10 +3,10 @@
 	<gost:startProcessing>2023-07-27T08:01:51+03:00</gost:startProcessing>
 	<gost:finishProcessing>2023-07-27T08:02:06+03:00</gost:finishProcessing>
 	<gost:appProcessed>
-		<gost:record gost:corrID="280036364">
+		<gost:record gost:corrID="123456789">
 			<gost:success>
-				<gost:globalID>264874789</gost:globalID>
-				<gost:certNum>С-ГГИ/17-07-2023/264874789</gost:certNum>
+				<gost:globalID>987654321</gost:globalID>
+				<gost:certNum>A-BCD/12-34-2023/123456789</gost:certNum>
 			</gost:success>
 		</gost:record>
 	</gost:appProcessed>
